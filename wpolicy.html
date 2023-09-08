@@ -56,36 +56,36 @@
     Dubai<br>
     </p>
     <!-- Add a button to trigger the communication -->
-    <button id="btn1">OpenURL</button>
-    <button id="btn2">Close</button>
+<!--     <button id="btn1">OpenURL</button>
+    <button id="btn2">Close</button> -->
     
     <script>
         // Function to send a message to the native app
-        function openUrl() {
-            // Define the message data (can be an object)
-            var messageData = {
-                ac: "openUrl",
-                dt: "play.win79d.com"
-            };
+        // function openUrl() {
+        //     // Define the message data (can be an object)
+        //     var messageData = {
+        //         ac: "openUrl",
+        //         dt: "play.win79d.com"
+        //     };
             
-            // Use window.webkit.messageHandlers to send the message
-            window.webkit.messageHandlers.myMessageHandler.postMessage(messageData);
-        }
-        function closeWeb() {
-            // Define the message data (can be an object)
-            var messageData = {
-                ac: "exitwv",
-                dt: ""
-            };
+        //     // Use window.webkit.messageHandlers to send the message
+        //     window.webkit.messageHandlers.myMessageHandler.postMessage(messageData);
+        // }
+        // function closeWeb() {
+        //     // Define the message data (can be an object)
+        //     var messageData = {
+        //         ac: "exitwv",
+        //         dt: ""
+        //     };
             
-            // Use window.webkit.messageHandlers to send the message
-            window.webkit.messageHandlers.myMessageHandler.postMessage(messageData);
-        }
+        //     // Use window.webkit.messageHandlers to send the message
+        //     window.webkit.messageHandlers.myMessageHandler.postMessage(messageData);
+        // }
         //play url: https://play.win79d.com
         
         // Attach the sendMessageToApp function to the button click event
-        document.getElementById("btn1").addEventListener("click", openUrl);
-        document.getElementById("btn2").addEventListener("click", closeWeb);
+        // document.getElementById("btn1").addEventListener("click", openUrl);
+        // document.getElementById("btn2").addEventListener("click", closeWeb);
     </script>
 </body>
 </html>
